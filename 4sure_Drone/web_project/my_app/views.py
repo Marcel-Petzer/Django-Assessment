@@ -105,4 +105,4 @@ def DroneMedCheck(self, request, *args, **kwargs):
     queryset = DM_Package.objects.filter(drone_availability=True)
     grouped_queryset = queryset.order_by('droneID').values('droneID').annotate(loaded_medications=ArrayAgg('loaded_item_name'))
     serializer = DM_PackageSerializer(grouped_queryset, many=True)
-    return Response(serializer.data)
+    return Response(serializer.data)  

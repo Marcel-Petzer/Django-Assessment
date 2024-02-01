@@ -13,7 +13,7 @@ class MedicationSerializer(serializers.ModelSerializer):
 
 
 
-
+  
 class DM_PackageSerializer(serializers.ModelSerializer):
     class Meta:
         model = DM_Package

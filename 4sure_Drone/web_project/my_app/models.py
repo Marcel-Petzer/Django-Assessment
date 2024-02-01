@@ -20,7 +20,7 @@ class Drone(models.Model):
         ('returning', 'Returning'),
     ])
 
-    def __str__(self):
+    def __str__(self):  
         return self.serial_number
 
 

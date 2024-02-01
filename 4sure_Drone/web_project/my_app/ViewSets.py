@@ -15,3 +15,4 @@ class MedicationViewSet(viewsets.ModelViewSet):
 class DM_PackageViewSet(viewsets.ModelViewSet):
     queryset = DM_Package.objects.all()
     serializer_class = DM_PackageSerializer
+  
