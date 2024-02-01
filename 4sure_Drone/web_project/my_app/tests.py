@@ -21,7 +21,7 @@ class DM_PackageViewSetTestCase(TestCase):
         self.assertEqual(queryset[2].medicationID, 3)
 
     def test_check_drone_availability_no_parameter(self):
-        request = RequestFactory().get('/api/dm_packages/')
+        request = RequestFactory().get('/api/dm_packages/')   
         view = DM_PackageViewSet()
         view.request = request
         
